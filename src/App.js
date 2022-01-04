@@ -3,7 +3,7 @@ import { useState, useEffect} from 'react';
 import Card from './comps/Card';
 import Pop  from './comps/Pop';
 import Title from './comps/Title';
-import Input from './comps/Input';
+// import Input from './comps/Input';
 
 function App() {
   const [pics, setPics] = useState([]);
@@ -20,7 +20,7 @@ console.log(pics)
   return (
     <div className="App">
       <Title />
-      <Input />
+      {/* <Input /> */}
       <Card pics={pics} setSelectedImg={setSelectedImg}/>
       { selectedImg && (
         <Pop selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
